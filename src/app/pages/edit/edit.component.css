@@ -1,0 +1,24 @@
+.insert-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 90vw;
+}
+
+.insert-form mat-form-field {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.align-submit {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-submit button {
+    text-transform: uppercase;
+}

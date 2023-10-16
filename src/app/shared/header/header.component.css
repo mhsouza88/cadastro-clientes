@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+mat-toolbar {
+  height: 6rem;
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title-group {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.example-form {
+  margin-top: 0;
+}
+
+mat-form-field {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+mat-form-field input.mat-input-element {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+}
+
+mat-icon {
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .title {
+    display: none;
+  }
+
+  .example-full-width {
+    width: 12rem;
+    margin-top: 1rem;
+  }
+}

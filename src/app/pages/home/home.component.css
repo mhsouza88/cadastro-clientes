@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.list {
+    overflow-x: auto;
+    width: 100%; 
+}
+
+.list th {
+    text-align: center;
+}
+
+.list td {
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto; 
+    overflow-y: auto; 
+}
+
+@media (max-width: 600px) {
+    .edit-icon, .delete-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .edit-icon mat-icon, .delete-icon mat-icon {
+        font-size: 1.4rem;
+    }
+}

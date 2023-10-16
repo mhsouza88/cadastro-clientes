@@ -1,0 +1,46 @@
+<div class="insert-form">
+<form [formGroup]="userForm" (ngSubmit)="saveUser()">
+  <mat-form-field appearance="fill">
+    <input 
+      matInput 
+      formControlName="name"
+      placeholder="Nome">
+    <mat-error *ngIf="nameControl?.hasError('required')">
+        O nome é obrigatório.
+    </mat-error>
+    <mat-error *ngIf="nameControl?.hasError('minlength')">
+        O nome deve ter pelo menos 3 caracteres.
+    </mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <input 
+      matInput 
+      formControlName="email"
+      type="email" 
+      placeholder="E-mail">
+    <mat-error *ngIf="emailControl?.hasError('required')">
+        O e-mail é obrigatório.
+    </mat-error>
+    <mat-error *ngIf="emailControl?.hasError('email')">
+        Por favor, insira um e-mail válido.
+    </mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <input 
+      matInput 
+      formControlName="bday"
+      [matDatepicker]="picker"
+      placeholder="Data de Nascimento">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="bdayControl?.hasError('required')">
+        A data de nascimento é obrigatória.
+    </mat-error>
+</mat-form-field>
+<div class="align-submit">
+  <button mat-raised-button color="primary" [disabled]="userForm.invalid">Salvar</button>
+</div>
+</form>
+</div>
