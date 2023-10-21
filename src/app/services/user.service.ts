@@ -21,7 +21,7 @@ export class UserService {
   }
 
   getUsers(): User[] {
-    return this.users;
+    return JSON.parse(JSON.stringify(this.users));
   }
 
   addUser(user: User): void {
