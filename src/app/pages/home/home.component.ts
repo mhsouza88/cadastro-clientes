@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
         dialogRef.afterClosed().subscribe(result => {
           if (result) {
             this.userService.deleteUser(userId);
-            location.reload();
+            this.loadUsers();
           }
         });
     } 
