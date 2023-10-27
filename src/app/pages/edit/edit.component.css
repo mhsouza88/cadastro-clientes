@@ -22,3 +22,7 @@
 .align-submit button {
     text-transform: uppercase;
 }
+
+mat-form-field {
+    margin-right: 12px;
+  }  

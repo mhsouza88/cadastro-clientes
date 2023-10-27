@@ -3,6 +3,7 @@ import { UserService, User } from '../../services/user.service'; // Importação
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { formatDate } from '@angular/common';
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
     selector: 'app-edit',
@@ -21,12 +22,19 @@ export class EditComponent implements OnInit {
         private userService: UserService, 
         private router: Router,
         private route: ActivatedRoute,
-        private fb: FormBuilder
+        private fb: FormBuilder,
+        private snackBar: MatSnackBar
     ) { 
         this.userForm = this.fb.group({
             name: ['', [Validators.required, Validators.minLength(3)]],
             email: ['', [Validators.required, Validators.email]],
             bday: ['', Validators.required]
+        });
+    }
+
+    openSnackBar(message: string) {
+        this.snackBar.open(message, 'Fechar', {
+            duration: 5000,
         });
     }
 
@@ -74,6 +82,7 @@ export class EditComponent implements OnInit {
             this.userService.addUser(newUser);
         }
         
+        this.openSnackBar(this.editingUser ? 'Usuário atualizado com sucesso!' : 'Usuário criado com sucesso!');
         this.router.navigate(['/']);
     }
 }

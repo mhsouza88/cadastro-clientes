@@ -40,7 +40,7 @@
     </mat-error>
 </mat-form-field>
 <div class="align-submit">
-  <button mat-raised-button color="primary" [disabled]="userForm.invalid">Salvar</button>
+  <button mat-raised-button color="primary" [disabled]="userForm.invalid" (click)="saveUser()">Salvar</button>
 </div>
 </form>
 </div>
