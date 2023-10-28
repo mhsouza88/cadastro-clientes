@@ -7,7 +7,7 @@
  </p>
  
  <h2> ⚛️ﾠSobre</h2>
- <p>O projeto foi realizado durante o bootcamp Santander Coders da <a href="https://ada.tech/" target="_blank">Ada Tech</a>. Este é o meu primeiro projeto em Angular + Angular Material e consiste em um CRUD que manipula o localStorage do navegador do usuário. É um cadastro de clientes de uma empresa fictícia chamada Infinity Technology, onde é possível adicionar clientes, visualizar a lista, editar um cliente específico, e por fim, deletar o cliente. O input de busca que fica no header da página é apenas um detalhe estético e não é funcional. O projeto também é totalmente responsivo em aparelhos móveis.
+ <p>O projeto foi realizado durante o bootcamp Santander Coders da <a href="https://ada.tech/" target="_blank">Ada Tech</a>. Este é o meu primeiro projeto em Angular + Angular Material e consiste em um CRUD que manipula o localStorage e o sessionStorage do navegador do usuário. É um cadastro de clientes de uma empresa fictícia chamada Infinity Technology, onde é possível adicionar clientes, visualizar a lista, editar um cliente específico, e por fim, deletar o cliente. O input de busca que fica no header da página é apenas um detalhe estético e não é funcional. O projeto também é totalmente responsivo em aparelhos móveis.
 </p><br/>
  
  <h2> 🔗ﾠLink</h2>
