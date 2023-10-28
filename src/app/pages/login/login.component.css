@@ -1,0 +1,30 @@
+.error-message {
+    color: red;
+    display: block;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container button {
+    text-transform: uppercase;
+}
+
+.login-container mat-form-field {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.align-submit {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

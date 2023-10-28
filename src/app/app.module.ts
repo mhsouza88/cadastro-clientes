@@ -22,6 +22,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from '../app/shared/modal/modal.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     EditComponent, 
     HomeComponent,
     ModalComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

@@ -37,11 +37,13 @@ export class UserService {
       this.saveToLocalStorage();
     }
   }
-
   deleteUser(userId: number): void {
     const index = this.users.findIndex(user => user.id === userId);
     if (index > -1) {
       this.users.splice(index, 1);
+      if (this.users.length === 0) {
+        this.nextId = 1;
+      }
       this.saveToLocalStorage();
     }
   }

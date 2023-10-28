@@ -83,6 +83,6 @@ export class EditComponent implements OnInit {
         }
         
         this.openSnackBar(this.editingUser ? 'Usuário atualizado com sucesso!' : 'Usuário criado com sucesso!');
-        this.router.navigate(['/']);
+        this.router.navigate(['/home']);
     }
 }

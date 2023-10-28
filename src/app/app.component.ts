@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cadastro-clientes';
+  get showHeaderFooter(): boolean {
+    return !!sessionStorage.getItem('isLoggedIn');
+  }
 }

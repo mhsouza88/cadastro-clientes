@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { UserService, User } from '../../services/user.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../../shared/modal/modal.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
     selector: 'app-home',
@@ -17,7 +18,8 @@ export class HomeComponent implements OnInit {
     constructor(
         private router: Router, 
         private userService: UserService, 
-        public dialog: MatDialog
+        public dialog: MatDialog,
+        private snackBar: MatSnackBar
     ) {}
 
     addUser() {
@@ -43,10 +45,13 @@ export class HomeComponent implements OnInit {
         });
     
         dialogRef.afterClosed().subscribe(result => {
-          if (result) {
-            this.userService.deleteUser(userId);
-            this.loadUsers();
-          }
+            if (result) {
+                this.userService.deleteUser(userId);
+                this.loadUsers();
+                this.snackBar.open('Usuário deletado com sucesso!', 'Fechar', {
+                    duration: 5000,
+                });
+            }
         });
     } 
 }
