@@ -22,8 +22,7 @@
 
 <h2> 🖼️ﾠPreview</h2>
 <p align="center">
-  [ BREVE ]
-
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/88038506/279151339-96ff7a63-757e-4a97-ba57-73c2380b1697.gif" alt="Preview do projeto">
   </p>
 <br/>
  
