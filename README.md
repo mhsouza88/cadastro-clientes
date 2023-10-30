@@ -11,7 +11,9 @@
 </p><br/>
  
  <h2> 🔗ﾠLink</h2>
- <p>- <a href="https://eminent-women.surge.sh/" target="_blank">Cadastro de clientes</a></p><br/>
+ <p>- <a href="https://eminent-women.surge.sh/" target="_blank">Cadastro de clientes</a></p>
+ <p>- Login: admin | senha: admin</p>
+ <br/>
 
 <h2> 🛠️ﾠTecnologias</h2>
 <p> - <a href="https://angular.io/" target="_blank">Angular</a>: Angular é um framework JavaScript desenvolvido pela Google para criar aplicações web de página única e reativas, com ênfase em modularidade, testabilidade e manutenção.</p>
